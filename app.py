@@ -18,7 +18,7 @@ laptop_type = st.selectbox('Type', df['TypeName'].unique())
 ram = st.selectbox('RAM (in GB)', [2, 4, 6, 8, 12, 16, 24, 32, 64])
 
 # Weight
-weight = st.number_input('Weight of the laptop (in kg)', min_value=0.0)
+weight = st.number_input('Weight of the laptop (in kg)', min_value=1.2)
 
 # Touchscreen
 touchscreen = st.selectbox('Touchscreen', ['No', 'Yes'])
@@ -27,7 +27,7 @@ touchscreen = st.selectbox('Touchscreen', ['No', 'Yes'])
 ips = st.selectbox('IPS', ['No', 'Yes'])
 
 # Screen size
-screen_size = st.number_input('Screen Size (in inches)', min_value=0.1)
+screen_size = st.number_input('Screen Size (in inches)', min_value=13.0)
 
 # Screen resolution
 resolution = st.selectbox('Screen Resolution', [
